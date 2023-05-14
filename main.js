@@ -162,7 +162,7 @@ function addProductToCart()
     });
 }
 cartProductsContainer.classList.add("empty");
-cartProductsContainer.innerHTML = "Your cart is empty";
+cartProductsContainer.innerHTML = "Your cart is empty.";
 addProductToCart();
 
 
