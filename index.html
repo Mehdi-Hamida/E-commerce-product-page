@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>E-commerce product page - Frontend Mentor</title>
+  <meta name="description" content="Building an E-commerce product page with HTML/CSS & Vanilla JS">
+</head>
+<body>
+  <div class="page-overlay">
+    <header id="page-header">
+      <div class="header-left">
+        <div id="burger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <img id="logo" src="./images/logo.svg" alt="Sneaker's company Logo" title="Sneaker's Logo">
+        <nav>
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="cart-container">
+          <div class="cart-icon-container">
+            <img id="cart-icon" src="./images/icon-cart.svg" alt="Access to cart icon" title="Cart icon">
+            <div id="items-in-cart-number-badge"></div>
+          </div>
+          <div id="cart">
+            <header>
+              <h3>Cart</h3>
+            </header>
+            <div id="cart-products-container"></div>
+            <button class="checkout-btn">Checkout</button>
+          </div>
+        </div>
+        <img class="profile-pic" src="./images/image-avatar.png" alt="User's profile picture" title="User's profile picture">
+      </div>
+    </header>
+  </div>
+
+  <section id="product-image-presentation">
+    <img class="nav-arrow prev-nav-arrow" src="./images/icon-previous.svg" alt="Left arrow for image slider navigation" title="Left arrow">
+      <div class="img-container">
+        <img class="presentation-images" src="./images/image-product-1.jpg" alt="Presentation picture of Fall Limited Edition Sneakers" title="Fall Limited Edition Sneakers">
+        <img class="presentation-images" src="./images/image-product-2.jpg" alt="Presentation picture of Fall Limited Edition Sneakers" title="Fall Limited Edition Sneakers">
+        <img class="presentation-images" src="./images/image-product-3.jpg" alt="Presentation picture of Fall Limited Edition Sneakers" title="Fall Limited Edition Sneakers">
+        <img class="presentation-images" src="./images/image-product-4.jpg" alt="Presentation picture of Fall Limited Edition Sneakers" title="Fall Limited Edition Sneakers">
+      </div>
+      <div class="img-thumb-container">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail presentation picture of Fall Limited Edition Sneakers" title="Fall Limited Edition Sneakers thumbnail">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail presentation picture of Fall Limited Edition Sneakers" title="Fall Limited Edition Sneakers thumbnail">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail presentation picture of Fall Limited Edition Sneakers" title="Fall Limited Edition Sneakers thumbnail">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail presentation picture of Fall Limited Edition Sneakers" title="Fall Limited Edition Sneakers thumbnail">
+      </div>
+    <img class="nav-arrow next-nav-arrow" src="./images/icon-next.svg" alt="Right arrow for image slider navigation" title="Right arrow">
+  </section>
+
+  <section id="product-description">
+    <h2>Sneaker Company</h2>
+    <h1>Fall Limited Edition Sneakers</h1>
+    <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+  </section>
+
+  <section id="product-buying">
+    <div class="price-container">
+      <div class="discounted-price-container">
+        <span class="discounted-price">$125.00</span>
+        <span class="discount-percentage">50%</span>
+      </div>
+      <div class="before-discount-price-container">
+        <span class="before-discount-price">$250.00</span>
+      </div>
+    </div>
+
+    <div class="product-amount-selector">
+      <img id="decrease-product-quantity-btn" src="./images/icon-minus.svg" alt="Minus icon for product number selection" title="Minus icon">
+      <span id="product-quantity-number">0</span>
+      <img id="increase-product-quantity-btn" src="./images/icon-plus.svg" alt="Plus icon for product number selection" title="Plus icon">
+    </div>
+
+    <button id="add-to-cart-btn">
+      <img src="./images/icon-cart.svg" alt="Cart icon to illustrate button" title="Cart icon">
+      Add to cart
+    </button>
+  </section>
+  
+  <script src="./main.js"></script>
+</body>
+</html>
